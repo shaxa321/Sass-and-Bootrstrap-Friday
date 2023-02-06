@@ -80,4 +80,8 @@ main .firstSection {
   background: url(./assets/img/coverBackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.card-img-top {
+  height: 250px;
 }/*# sourceMappingURL=main.css.map */
