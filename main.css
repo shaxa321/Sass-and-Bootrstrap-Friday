@@ -1,0 +1,83 @@
+html header {
+  font-size: 1em;
+  background-color: #d6edf3;
+}
+html header .logoDiv {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+html header .logoDiv img {
+  height: 100%;
+}
+html header .menuDiv nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 400;
+  padding: 0;
+  border: 0;
+}
+html header .menuDiv nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  border: 0;
+}
+html header .menuDiv nav ul li {
+  padding: 0;
+  border: 0;
+  list-style-type: none;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+html header .menuDiv nav ul li a {
+  padding: 0;
+  border: 0;
+  color: grey;
+}
+html header .menuDiv nav ul li a :hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  html header .menuDiv nav ul {
+    flex-direction: row;
+  }
+}
+html header .menuDiv .iconDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+html header .menuDiv .iconDiv ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+}
+html header .menuDiv .iconDiv ul li {
+  padding: 1em;
+}
+
+main .firstSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  height: 700px;
+  background: url(./assets/img/coverBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=main.css.map */

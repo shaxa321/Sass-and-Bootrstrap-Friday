@@ -1,0 +1,78 @@
+@import "variables";
+
+@mixin pbzero() {
+  padding: 0;
+  border: 0;
+}
+@mixin flexcenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+html {
+  header {
+    font-size: 1em;
+    background-color: $headerbgColor;
+    .logoDiv {
+      height: 150px;
+      @include flexcenter(row);
+      img {
+        height: 100%;
+      }
+    }
+    .menuDiv {
+      nav {
+        @include flexcenter(row);
+        font-weight: 400;
+        @include pbzero();
+        ul {
+          @include flexcenter(column);
+          @include pbzero();
+          li {
+            @include pbzero();
+            list-style-type: none;
+            padding: 1em;
+            @include flexcenter(column);
+
+            a {
+              @include pbzero();
+              color: $linkColor;
+              :hover {
+                text-decoration: none;
+                cursor: pointer;
+              }
+            }
+          }
+
+          @media (min-width: 768px) {
+            flex-direction: row;
+          }
+        }
+      }
+
+      .iconDiv {
+        @include flexcenter(row);
+        ul {
+          @include flexcenter(row);
+          list-style-type: none;
+          li {
+            padding: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  .firstSection {
+    @include flexcenter(column);
+    color: white;
+    height: 700px;
+    background: url(./assets/img/coverBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
